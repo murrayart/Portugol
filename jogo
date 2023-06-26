@@ -28,7 +28,7 @@ programa
 					se(idade > 6 e idade < 100){
 
 						escreva("\nEba! Acesso liberado!")
-							escreva("\n Carregando jogo...")
+							escreva("\nCarregando jogo...")
 			}
 				//aguarde 10 segundos
 			w.aguarde(10000)
