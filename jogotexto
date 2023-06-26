@@ -22,7 +22,7 @@ programa
 				w.aguarde(1337)
 
 			se(idade < 6){
-				escreva("Sua idade tem que ser maior que 6 para jogar!")
+				escreva("\nSua idade tem que ser maior que 6 para jogar!")
 			}
 
 					se(idade > 6 e idade < 100){
