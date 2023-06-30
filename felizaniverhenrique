@@ -1,0 +1,59 @@
+programa
+{
+	inclua biblioteca Util --> u
+	
+	funcao inicio()
+	{
+
+		cadeia nome, data, sobrenome, resposta
+		escreva("Olá! Tudo bem?")
+			escreva("\nQual é o seu primeiro nome? ~~~> ")
+
+		leia(nome)
+
+			se(nome == "Henrique" ou nome == "henrique" ou nome == "HENRIQUE")
+
+		u.aguarde(1337)
+				escreva("Ah! é um belo nome, ", nome)
+					u.aguarde(1337)
+
+					escreva("\nMas qual é seu sobrenome? ")
+				leia(sobrenome)
+						se(sobrenome == "da Silva Dartora" ou sobrenome == "da silva dartora" ou sobrenome == "Da Silva Dartora" ou sobrenome == "DA SILVA DARTORA" ou sobrenome == "da Silva" ou sobrenome == "da silva" ou sobrenome == "Da Silva" ou sobrenome == "DA SILVA" ou sobrenome == "dartora" ou sobrenome == "Dartora" ou sobrenome == "DARTORA")
+u.aguarde(1337)
+			
+			escreva("\nEi! Você não é o Sargento ", sobrenome, "?")
+				escreva("\nSim ou Não? ")
+
+					leia(resposta)
+					se(resposta == "Sim" ou resposta == "sim" ou resposta == "s" ou resposta == "S")
+						escreva("\nAh que legal!")
+
+					senao
+
+						escreva("Ah! Perdão, confundi!")
+
+					u.aguarde(1337)
+						escreva("\nÉ um prazer conhece-lo!")
+							u.aguarde(1337)
+
+				escreva("\nQue dia você faz aniversário? *Coloque apenas dia e mês, pode ser escrito ou com barra* ")
+		leia(data)
+
+			
+
+			se(data == "hoje" ou data == "Hoje" ou data == "04 de julho" ou data == "04/07")
+					escreva("\nUau! Que legal!")
+						u.aguarde(1337)
+						escreva("\nEntão eu te desejo um...")
+
+					u.aguarde(1337)
+						escreva("\n")
+
+				escreva("!!! ♡ FELIZ ANIVERSÁRIO  ♡ !!!")
+						
+
+					
+				
+	}
+}
