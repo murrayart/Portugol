@@ -1,11 +1,17 @@
 programa {
+
+	inclua biblioteca Util --> u
   funcao inicio() {
+  	  	
     start()
     newGame()
     gamePart1()
+    
   }
   funcao start(){
+  	
     cadeia start
+    
     escreva("\n")
     escreva("  ███████████           █████                                                  \n")
     escreva("░░███░░░░░███         ░░███                                                   \n")
@@ -32,12 +38,17 @@ programa {
     escreva("\n\n\n")
     escreva("                  *PRESSIONE START*                       ")
     leia(start)
+    
     se(start == ""){
+    	
       limpa()
+      
     }
   }
   funcao newGame(){
+  	
     cadeia newGame
+    
     escreva("\n\n")
     escreva("  ██████   █████                                                                  \n")
     escreva("░░██████ ░░███                                                                   \n")
@@ -51,8 +62,16 @@ programa {
     escreva("                                       ░░██████                                \n")
     escreva("                                      ░░░░░░                                 \n")
     leia(newGame)
+
+	escreva("Carregando...")
+    
+ u.aguarde(5000)
+ 
+    
     se(newGame == ""){
+    	
       limpa()
+      
     }
   }
   funcao gamePart1(){
@@ -172,27 +191,42 @@ programa {
     escreva("E você, quem é?\n")
       escreva("\n")
     leia(nome)
+      escreva("\n")
   
     escreva("Você é menino ou menina?\n")
+      escreva("\n")
     leia(sexo)
     se(sexo == "menino" ou sexo == "Menino"){
 
         escreva("\n")
 
-        escreva("\nPrazer em conhecê-lo, ", nome)
+     escreva("\nPrazer em conhecê-lo, ", nome)
+
+     	escreva("\n")
+
+  u.aguarde(2000)
+     
     }
-se(sexo == "menina" ou sexo == "Menina"){
+    se(sexo == "menina" ou sexo == "Menina"){
 
     escreva("\n")
+
     escreva("\nPrazer em conhecê-la, ", nome)
-    escreva("\n")
+
+    
+u.aguarde(2000)
 
 }
-    limpa()
+
+		escreva("\n")
+
+		leia(continuar)
+
+    
   escreva("\n((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((( ")     
       escreva("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")    
       escreva("\n@@@@@@@@@@@@@@@@@@@@.....,,/@@@..........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")      
-      escreva("\n@@@@@@@@@@@@@@@@@@@......,***&.............@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")     
+      escreva("\n@@@@@@@@@@@@@@@@@@@......,***&............. @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")     
       escreva("\n@@@@@@@@@@@@@@@@@@#.......***,..............*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")     
       escreva("\n@@@@@@@@@@@@@@@@@@,.......,*#.................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")      
       escreva("\n@@@@@@@@@@@@@@@@@@,........,%........,,*#&/,/#.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")     
@@ -232,7 +266,9 @@ se(sexo == "menina" ou sexo == "Menina"){
 
     escreva("\n")
     nomePokemon = "Treecko"
-    escreva("\nEste é seu primeiro Pokémon: ", nomePokemon)
+    
+    escreva(nomePokemon, " será seu primeiro Pokemon")
+    
     escreva("\nMas você pode modificar o nome...")
 
 
