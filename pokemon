@@ -75,7 +75,7 @@ programa {
     }
   }
   funcao gamePart1(){
-    cadeia continuar,nome, sexo, nomePokemon, pokedex, capturaPokemon, escolher
+    cadeia continuar, nome, sexo, nomePokemon, escolher, escolherPokemon, treecko, mudkip, torchic
     escreva("\n\n")
     escreva("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
     escreva("&&&&&&&&&&&&&&&&&&&&&&&#(#&&@&#(&&&&&&&&&&&&&&&&&\n")
@@ -188,7 +188,7 @@ programa {
     leia(continuar)
     escreva("É isso que eu faço.")
     leia(continuar)
-    escreva("E você, quem é?\n")
+    escreva("E você, quem é? * Pode ser inserido nome real ou um nickname *\n")
       escreva("\n")
     leia(nome)
       escreva("\n")
@@ -197,8 +197,6 @@ programa {
       escreva("\n")
     leia(sexo)
     se(sexo == "menino" ou sexo == "Menino"){
-
-        escreva("\n")
 
      escreva("\nPrazer em conhecê-lo, ", nome)
 
@@ -213,16 +211,14 @@ programa {
 
     escreva("\nPrazer em conhecê-la, ", nome)
 
-    
-u.aguarde(2000)
+u.aguarde(1337)
 
 }
+	
+ 	leia(continuar)
 
-		escreva("\n")
+	limpa()
 
-		leia(continuar)
-
-    
   escreva("\n((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((( ")     
       escreva("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")    
       escreva("\n@@@@@@@@@@@@@@@@@@@@.....,,/@@@..........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")      
@@ -267,11 +263,39 @@ u.aguarde(2000)
     escreva("\n")
     nomePokemon = "Treecko"
     
-    escreva(nomePokemon, " será seu primeiro Pokemon")
+    escreva(nomePokemon, " será seu primeiro Pokémon")
+  u.aguarde(1337)
     
     escreva("\nMas você pode modificar o nome...")
 
+  u.aguarde(1337)
 
-         
+    escreva("\n")
+
+    escreva("\nDeseja modificar o nome de seu Pokémon?")
+
+    escreva("\n")
+    escreva("\nSim / Não")
+
+    escreva("\n")
+
+    leia(escolher)
+
+    se(escolher == "Não" ou escolher == "não" ou escolher == "NÃO" ou escolher == "Nao" ou escolher == "nao" ou escolher == "NAO"){
+
+      nomePokemon = nomePokemon
+
+    }
+
+    se(escolher == "Sim" ou escolher == "sim" ou escolher == "SIM"){
+
+    escreva("\n")
+
+    escreva("Insira um novo nome para seu Pokémon : ")
+
+    leia(nomePokemon)
+
+    }
+
   }
 }
