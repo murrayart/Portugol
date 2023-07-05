@@ -75,7 +75,7 @@ programa {
     }
   }
   funcao gamePart1(){
-    cadeia continuar, nome, sexo, nomePokemon, escolher, escolherPokemon, treecko, mudkip, torchic
+    cadeia continuar, nome, sexo, nomePokemon, escolher
     escreva("\n\n")
     escreva("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
     escreva("&&&&&&&&&&&&&&&&&&&&&&&#(#&&@&#(&&&&&&&&&&&&&&&&&\n")
@@ -116,7 +116,7 @@ programa {
     escreva("Mas todos aqui me conhecem como Professor Pokémon!")
     leia(continuar)
     escreva("Isso é o que nós conhecemos como Pokémon:")
-    leia(continuar)
+  u.aguarde(2350)
     limpa()
     escreva("\n\n")
     escreva("                         (                                                      \n")
@@ -188,14 +188,17 @@ programa {
     leia(continuar)
     escreva("É isso que eu faço.")
     leia(continuar)
-    escreva("E você, quem é? * Pode ser inserido nome real ou um nickname *\n")
+    escreva("E você, quem é?\n")
       escreva("\n")
     leia(nome)
       escreva("\n")
   
     escreva("Você é menino ou menina?\n")
+    
       escreva("\n")
+      
     leia(sexo)
+    
     se(sexo == "menino" ou sexo == "Menino"){
 
      escreva("\nPrazer em conhecê-lo, ", nome)
@@ -304,9 +307,49 @@ u.aguarde(3000)
 
 		escreva("\n")
 
-	escreva("\nMuito bem! Agora seu Pokémon se chama : ", nomePokemon)
+	escreva("\nConfigurações aplicadas com sucesso!")
+u.aguarde(1337)
+		escreva("\n")
+	escreva("Muito bem! Agora seu Pokémon se chama ", nomePokemon)
+u.aguarde(1337)
 
     }
+
+    leia(continuar)
+
+	limpa()
+
+    escreva("\n\n")
+    escreva("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
+    escreva("&&&&&&&&&&&&&&&&&&&&&&&#(#&&@&#(&&&&&&&&&&&&&&&&&\n")
+    escreva("&&&&&&&&&&&&&&&&&&&&%/(/@@@%%@@@/#/@&&&&&&&&&&&&&\n")
+    escreva("@@@@@@@@@@@@@@@@@@&%((@,........,#,##&@@@@@@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@@@@@@@##.,/(....(,/,,&@@@@@@@@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@@@@@#/,/., @....*@ ,,(/%&&@@@@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@@@@@@&(#*.....,,.,,,%&@@@@@@@@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@@@@@@@@@&%//,,,,,/&#@@@@@@@@@@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&@@@@@@@@@@@@@@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@@@@@@@#/  ,/,*///(,,,#@@@@@@@@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@@@(.   ,.. ##%%%%*,,/,,.,/,,#@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@#  ..  /  ,#####(  /    .,,,,#@@@@@\n")
+    escreva("@@@@@@@@@@@@@@#  *,   / ######(  ,////((,/,,/@@@@\n")
+    escreva("&/...,,#&@@@/#,.,/,   / ######( /     ,//,,,.@@@@\n")
+    escreva("@@%(/...*(*#//,*#.     /%%%%%%%/,     ,/*//*,,%@@\n")
+    escreva("&/,,,/.#(*,,,,,%/       %%%%%%% ,,,,,..,@#///%@@@\n")
+    escreva("@@###@@@@@#/,,##        %%%%%%%.    ,,,,#,,,/@@@@\n")
+    escreva("@@@@@@@@@@@@@@@#,      #@  ..,@(,,,,,.*(..,/@@@@@\n")
+    escreva("@@@@@@@@@@@@@@%,**,,,,,#(#/((//#,,,,*,,*/(#@@@@@@\n")
+    escreva("@@@@@@@@@@@@@@#.,,,,,,%###/((//#,,,,, .,,,,@@@@@@\n")
+    escreva("&&&&&&&&&&&&&#,,,,,,,,####@%#####,,,,,,,,,,@@@@@@\n")
+    escreva(",,,,,,,,,,,,,#,.,,,,,,####@@%#//#,,,,,,,,,.@&&&@@\n")
+    escreva("..............((((*,,##%%&&%&&((#*,,,,*((%*.....,\n")
+    escreva("...............%#########@...,%#####&&&%.........\n")
+    escreva("................//////@..........#,/,,/(.........\n")
+    escreva("................%,,,//@...........,./*,*&........\n")
+    escreva("...............%%*,,*,............#,.,(%.........\n")
+    escreva("............#/./%,/%&@............&%,,*/@%.......\n")
+    escreva(".............%@@@@@%.............@#%%%%%%@.......\n")
+    escreva(".................................................\n")
 
   }
 }
