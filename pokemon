@@ -311,11 +311,8 @@ u.aguarde(3000)
 u.aguarde(1337)
 		escreva("\n")
 	escreva("Muito bem! Agora seu Pokémon se chama ", nomePokemon)
-u.aguarde(1337)
 
     }
-
-    leia(continuar)
 
 	limpa()
 
@@ -350,6 +347,10 @@ u.aguarde(1337)
     escreva("............#/./%,/%&@............&%,,*/@%.......\n")
     escreva(".............%@@@@@%.............@#%%%%%%@.......\n")
     escreva(".................................................\n")
+
+	  escreva("Para começar sua primeira batalha precisamos saber quais são as habilidades de seu Pokémon...")
+	
+    leia(continuar)
 
   }
 }
