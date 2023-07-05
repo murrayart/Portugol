@@ -260,40 +260,51 @@ u.aguarde(1337)
         escreva("\n@@@@@@@@@@@@@@@@@@@@@@@@@@#*(%@@@@@@@@/.............,.,...,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")     
         escreva("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%****/@*,,,**@@,***/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
 
-    escreva("\n")
+    	escreva("\n")
     nomePokemon = "Treecko"
     
-    escreva(nomePokemon, " será seu primeiro Pokémon")
+    	escreva(nomePokemon, " será seu primeiro Pokémon")
   u.aguarde(1337)
     
-    escreva("\nMas você pode modificar o nome...")
+    	escreva("\nMas você pode modificar o nome...")
 
   u.aguarde(1337)
 
-    escreva("\n")
+    	escreva("\n")
 
-    escreva("\nDeseja modificar o nome de seu Pokémon?")
+    	escreva("\nDeseja modificar o nome de seu Pokémon?")
 
-    escreva("\n")
-    escreva("\nSim / Não")
+    	escreva("\n")
+    	escreva("\nSim / Não")
 
-    escreva("\n")
+    	escreva("\n")
 
     leia(escolher)
 
-    se(escolher == "Não" ou escolher == "não" ou escolher == "NÃO" ou escolher == "Nao" ou escolher == "nao" ou escolher == "NAO"){
+    		se(escolher == "Não" ou escolher == "não" ou escolher == "NÃO" ou escolher == "Nao" ou escolher == "nao" ou escolher == "NAO"){
 
       nomePokemon = nomePokemon
 
     }
 
-    se(escolher == "Sim" ou escolher == "sim" ou escolher == "SIM"){
+    	se(escolher == "Sim" ou escolher == "sim" ou escolher == "SIM"){
 
-    escreva("\n")
+    		escreva("\n")
 
-    escreva("Insira um novo nome para seu Pokémon : ")
+    	escreva("Insira um novo nome para seu Pokémon : ")
 
+    		escreva("\n")
+	
     leia(nomePokemon)
+
+    
+	escreva("\nCarregando ajustes...")
+
+u.aguarde(3000)
+
+		escreva("\n")
+
+	escreva("\nMuito bem! Agora seu Pokémon se chama : ", nomePokemon)
 
     }
 
