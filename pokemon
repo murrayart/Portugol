@@ -308,9 +308,13 @@ u.aguarde(3000)
 		escreva("\n")
 
 	escreva("\nConfigurações aplicadas com sucesso!")
+		escreva("\n")
 u.aguarde(1337)
 		escreva("\n")
-	escreva("Muito bem! Agora seu Pokémon se chama ", nomePokemon)
+	escreva("Muito bem! O nome de seu Pokémon foi alterado para ", nomePokemon)
+
+	leia(continuar)
+		
 
     }
 
@@ -352,5 +356,7 @@ u.aguarde(1337)
 	
     leia(continuar)
 
+	  escreva("Vamos começar...")
+	  	leia(continuar)
   }
 }
