@@ -1,50 +1,52 @@
 programa {
 
 	inclua biblioteca Util --> u
-  funcao inicio() {
-  	  	
-    start()
-    newGame()
-    gamePart1()
+	
+	funcao inicio() {
+		start()
+		newGame()
+		gamePart1()
+		pokedex()
+	}
+	
+	funcao start()
+	{
+		cadeia start
     
-  }
-  funcao start(){
-  	
-    cadeia start
+		escreva("\n")
+		escreva("  ███████████           █████                                                  \n")
+		escreva("░░███░░░░░███         ░░███                                                   \n")
+		escreva(" ░███    ░███  ██████  ░███ █████  ██████  █████████████    ██████  ████████ \n")
+		escreva(" ░██████████  ███░░███ ░███░░███  ███░░███░░███░░███░░███  ███░░███░░███░░███ \n")
+		escreva(" ░███░░░░░░  ░███ ░███ ░██████░  ░███████  ░███ ░███ ░███ ░███ ░███ ░███ ░███ \n")
+		escreva(" ░███        ░███ ░███ ░███░░███ ░███░░░   ░███ ░███ ░███ ░███ ░███ ░███ ░███ \n")
+		escreva(" █████       ░░██████  ████ █████░░██████  █████░███ █████░░██████  ████ █████\n")
+		escreva("░░░░░         ░░░░░░  ░░░░ ░░░░░  ░░░░░░  ░░░░░ ░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░ \n")
+		escreva("\n")
+		escreva("███████╗███╗   ███╗███████╗██████╗  █████╗ ██╗     ██████╗ \n")
+		escreva("██╔════╝████╗ ████║██╔════╝██╔══██╗██╔══██╗██║     ██╔══██╗\n")
+		escreva("█████╗  ██╔████╔██║█████╗  ██████╔╝███████║██║     ██║  ██║\n")
+		escreva("██╔══╝  ██║╚██╔╝██║██╔══╝  ██╔══██╗██╔══██║██║     ██║  ██║\n")
+		escreva("███████╗██║ ╚═╝ ██║███████╗██║  ██║██║  ██║███████╗██████╔╝\n")
+		escreva("╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═════╝ \n")
+		escreva("\n")                                                       
+		escreva(" ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗\n")
+		escreva(" ██║   ██║██╔════╝██╔══██╗██╔════╝██║██╔═══██╗████╗  ██║\n")
+		escreva(" ██║   ██║█████╗  ██████╔╝███████╗██║██║   ██║██╔██╗ ██║\n")
+		escreva("╚██╗ ██╔╝ ██╔══╝  ██╔══██╗╚════██║██║██║   ██║██║╚██╗██║\n")
+		escreva("╚████╔╝   ███████╗██║  ██║███████║██║╚██████╔╝██║ ╚████║\n")
+		escreva(" ╚═══╝    ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝\n")
+		escreva("\n\n\n")
+		escreva("                  *PRESSIONE START*                       ")
+    		leia(start)
     
-    escreva("\n")
-    escreva("  ███████████           █████                                                  \n")
-    escreva("░░███░░░░░███         ░░███                                                   \n")
-    escreva(" ░███    ░███  ██████  ░███ █████  ██████  █████████████    ██████  ████████ \n")
-    escreva(" ░██████████  ███░░███ ░███░░███  ███░░███░░███░░███░░███  ███░░███░░███░░███ \n")
-    escreva(" ░███░░░░░░  ░███ ░███ ░██████░  ░███████  ░███ ░███ ░███ ░███ ░███ ░███ ░███ \n")
-    escreva(" ░███        ░███ ░███ ░███░░███ ░███░░░   ░███ ░███ ░███ ░███ ░███ ░███ ░███ \n")
-    escreva(" █████       ░░██████  ████ █████░░██████  █████░███ █████░░██████  ████ █████\n")
-    escreva("░░░░░         ░░░░░░  ░░░░ ░░░░░  ░░░░░░  ░░░░░ ░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░ \n")
-    escreva("\n")
-    escreva("███████╗███╗   ███╗███████╗██████╗  █████╗ ██╗     ██████╗ \n")
-    escreva("██╔════╝████╗ ████║██╔════╝██╔══██╗██╔══██╗██║     ██╔══██╗\n")
-    escreva("█████╗  ██╔████╔██║█████╗  ██████╔╝███████║██║     ██║  ██║\n")
-    escreva("██╔══╝  ██║╚██╔╝██║██╔══╝  ██╔══██╗██╔══██║██║     ██║  ██║\n")
-    escreva("███████╗██║ ╚═╝ ██║███████╗██║  ██║██║  ██║███████╗██████╔╝\n")
-    escreva("╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═════╝ \n")
-    escreva("\n")                                                       
-    escreva(" ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗\n")
-    escreva(" ██║   ██║██╔════╝██╔══██╗██╔════╝██║██╔═══██╗████╗  ██║\n")
-    escreva(" ██║   ██║█████╗  ██████╔╝███████╗██║██║   ██║██╔██╗ ██║\n")
-    escreva("╚██╗ ██╔╝ ██╔══╝  ██╔══██╗╚════██║██║██║   ██║██║╚██╗██║\n")
-    escreva("╚████╔╝   ███████╗██║  ██║███████║██║╚██████╔╝██║ ╚████║\n")
-    escreva(" ╚═══╝    ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝\n")
-    escreva("\n\n\n")
-    escreva("                  *PRESSIONE START*                       ")
-    leia(start)
-    
-    se(start == ""){
-    	
-      limpa()
-      
-    }
-  }
+    		se(start == ""){
+      		limpa()
+   	 	}
+  
+  	}// fim funcao start
+
+  
   funcao newGame(){
   	
     cadeia newGame
@@ -65,15 +67,16 @@ programa {
 
 	escreva("Carregando...")
     
- u.aguarde(5000)
+ 	u.aguarde(5000)
  
     
-    se(newGame == ""){
-    	
-      limpa()
-      
+    	se(newGame == ""){
+      	limpa()
     }
-  }
+    
+  }// fim funcao newgame
+
+
   funcao gamePart1(){
     cadeia continuar, nome, sexo, nomePokemon, escolher
     escreva("\n\n")
@@ -199,30 +202,34 @@ programa {
       
     leia(sexo)
     
-    se(sexo == "menino" ou sexo == "Menino"){
+    se(sexo == "menino" ou sexo == "Menino")
+    {
 
-     escreva("\nPrazer em conhecê-lo, ", nome)
+     	escreva("\nPrazer em conhecê-lo, ", nome)
 
      	escreva("\n")
 
-  u.aguarde(2000)
+ 	 	u.aguarde(2000)
      
     }
-    se(sexo == "menina" ou sexo == "Menina"){
 
-    escreva("\n")
+    
+    se(sexo == "menina" ou sexo == "Menina")
+    {
 
-    escreva("\nPrazer em conhecê-la, ", nome)
+    		escreva("\n")
 
-u.aguarde(1337)
+    		escreva("\nPrazer em conhecê-la, ", nome)
 
-}
+		u.aguarde(1337)
+
+	}
 	
  	leia(continuar)
 
 	limpa()
 
-  escreva("\n((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((( ")     
+  	escreva("\n((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((( ")     
       escreva("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")    
       escreva("\n@@@@@@@@@@@@@@@@@@@@.....,,/@@@..........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")      
       escreva("\n@@@@@@@@@@@@@@@@@@@......,***&............. @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")     
@@ -284,7 +291,7 @@ u.aguarde(1337)
 
     leia(escolher)
 
-    		se(escolher == "Não" ou escolher == "não" ou escolher == "NÃO" ou escolher == "Nao" ou escolher == "nao" ou escolher == "NAO"){
+    	se(escolher == "Não" ou escolher == "não" ou escolher == "NÃO" ou escolher == "Nao" ou escolher == "nao" ou escolher == "NAO"){
 
       nomePokemon = nomePokemon
 
@@ -307,7 +314,7 @@ u.aguarde(3000)
 
 		escreva("\n")
 
-	escreva("\nConfigurações aplicadas com sucesso!")
+	escreva("\nOs ajustes foram aplicados com sucesso!")
 u.aguarde(1337)
 		escreva("\n")
 	escreva("Muito bem! O nome de seu Pokémon foi alterado para ", nomePokemon)
@@ -351,11 +358,30 @@ u.aguarde(1337)
     escreva(".............%@@@@@%.............@#%%%%%%@.......\n")
     escreva(".................................................\n")
 
-	  escreva("Para começar sua primeira batalha Pokédex...")
+	  escreva("Para começar sua primeira batalha Pokémon...")
 	
     leia(continuar)
 
-	  escreva("Vamos deve estar se peguntando o que é uma Pokédex...")
+	  escreva("Você deve estar se perguntando o que é uma Pokédex...")
+	  
 	  	leia(continuar)
-  }
+
+	escreva("Uma Pokédex é basicamente uma enciclopédia que contém todas as espécies de Pokémon e suas habilidades...")
+
+		leia(continuar)
+		
+	 escreva("Então vamos abrir a Pokédex...")
+
+	 	leia(continuar)
+
+	 	limpa()
+
+	 	
+  }//fim funcao gamePart1
+	
+	funcao pokedex()
+	{
+		
+		
+	}
 }
