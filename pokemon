@@ -308,7 +308,6 @@ u.aguarde(3000)
 		escreva("\n")
 
 	escreva("\nConfigurações aplicadas com sucesso!")
-		escreva("\n")
 u.aguarde(1337)
 		escreva("\n")
 	escreva("Muito bem! O nome de seu Pokémon foi alterado para ", nomePokemon)
@@ -352,11 +351,11 @@ u.aguarde(1337)
     escreva(".............%@@@@@%.............@#%%%%%%@.......\n")
     escreva(".................................................\n")
 
-	  escreva("Para começar sua primeira batalha precisamos saber quais são as habilidades de seu Pokémon...")
+	  escreva("Para começar sua primeira batalha Pokédex...")
 	
     leia(continuar)
 
-	  escreva("Vamos começar...")
+	  escreva("Vamos deve estar se peguntando o que é uma Pokédex...")
 	  	leia(continuar)
   }
 }
