@@ -196,32 +196,31 @@ programa {
     leia(nome)
       escreva("\n")
   
-    escreva("Você é menino ou menina?\n")
+  escreva("Você é menino ou menina?\n")
     
-      escreva("\n")
+  escreva("\n")
       
-    leia(sexo)
+  leia(sexo)
     
-    se(sexo == "menino" ou sexo == "Menino")
+  se(sexo == "menino" ou sexo == "Menino")
     {
 
-     	escreva("\nPrazer em conhecê-lo, ", nome)
+  escreva("\nPrazer em conhecê-lo, ", nome)
 
-     	escreva("\n")
+  escreva("\n")
 
- 	 	u.aguarde(2000)
+ 	u.aguarde(2000)
      
     }
 
-    
-    se(sexo == "menina" ou sexo == "Menina")
+  se(sexo == "menina" ou sexo == "Menina")
     {
 
-    		escreva("\n")
+  escreva("\n")
 
-    		escreva("\nPrazer em conhecê-la, ", nome)
+  escreva("\nPrazer em conhecê-la, ", nome)
 
-		u.aguarde(1337)
+	u.aguarde(1337)
 
 	}
 	
@@ -273,53 +272,53 @@ programa {
     	   escreva("\n")
     	nomePokemon = "Treecko"
     
-    	   escreva(nomePokemon, " será seu primeiro Pokémon")
-		u.aguarde(1337)
+  escreva(nomePokemon, " será seu primeiro Pokémon.")     
+	u.aguarde(1337)
     
-    	   escreva("\nMas você pode modificar o nome...")
+  escreva("\nPortanto o nome pode ser alterado...")
 
-		u.aguarde(1337)
+	u.aguarde(1337)
 
-    	   escreva("\n")
+  escreva("\n")
 
-    	   escreva("\nDeseja modificar o nome de seu Pokémon?")
+  escreva("\nDeseja alterar o nome de seu Pokémon?")
 
-    	   escreva("\n")
-    	   escreva("\nSim / Não")
+  escreva("\n")
+  escreva("\nSim / Não")
 
-    	   escreva("\n")
+  escreva("\n")
 
-	   leia(escolher)
+	leia(escolher)
 
-    		se(escolher == "Não" ou escolher == "não" ou escolher == "NÃO" ou escolher == "Nao" ou escolher == "nao" ou escolher == "NAO"){
+    se(escolher == "Não" ou escolher == "não" ou escolher == "NÃO" ou escolher == "Nao" ou escolher == "nao" ou escolher == "NAO"){
 
-        nomePokemon = nomePokemon
+  nomePokemon = nomePokemon
 
     }
 
-    	    se(escolher == "Sim" ou escolher == "sim" ou escolher == "SIM"){	
+  se(escolher == "Sim" ou escolher == "sim" ou escolher == "SIM"){	
 
-    	    escreva("\n")
+  escreva("\n")
 
-    	    escreva("Insira um novo nome para seu Pokémon : ")
+  escreva("Insira um novo nome para seu Pokémon : ")
 
-    		escreva("\n")
+  escreva("\n")
 	
-         leia(nomePokemon)
+  leia(nomePokemon)
 
-	    escreva("\nCarregando ajustes...")
+	escreva("\nCarregando ajustes...")
 
-         u.aguarde(3000)
+  u.aguarde(3000)
 
-	    escreva("\n")
+	escreva("\n")
 
-	    escreva("\nOs ajustes foram aplicados com sucesso!")
+	escreva("\nOs ajustes foram aplicados com sucesso!")
 	    
-		u.aguarde(1337)
+	u.aguarde(1337)
 		
-	    escreva("\n")
+	 escreva("\n")
 		
-	    escreva("Muito bem! O nome de seu Pokémon foi alterado para ", nomePokemon)
+	 escreva("Muito bem! O nome de seu Pokémon foi alterado para ", nomePokemon)
 
 	leia(continuar)
 		
@@ -364,13 +363,19 @@ programa {
 
 	leia(continuar)
 
-      escreva("Devemos saber quais são as habilidades de ", nomePokemon)
+  escreva("Devemos saber quais são as habilidades de ", nomePokemon)
 
-      leia(continuar)
+  leia(continuar)
+
+  escreva("Para isso, usaremos a Pokédex")
 	
 	leia(continuar)
 
-	escreva("Você deve estar se perguntando o que é uma Pokédex...")
+	escreva("Você deve estar se perguntando...")
+
+	leia(continuar)
+
+	escreva("* Mas professor, o que é uma Pokédex? *")
 	  
 	leia(continuar)
 
@@ -382,13 +387,21 @@ programa {
 
 	leia(continuar)
 
+	escreva("\n")
+
+	escreva("Carregando...")
+
+	u.aguarde(4000)
+
 	limpa()
 
 	 	
   }//fim funcao gamePart1
 	
 	funcao pokedex()
+
 	{
+
 	escreva("\n                                                  ")             
      escreva("\n                                                    ")     
      escreva("\n             ,/////////////////////                  ")         
@@ -412,5 +425,8 @@ programa {
      escreva("\n      ////////.                   *///////.               ")    
      escreva("\n         ,//////////////*//////////////                   ")    
      escreva("\n             *///////////////////.        ")
+     escreva("\n")
+     escreva("\n")
+     escreva("                *PRESSIONE START*                       ")
 	}
 }
